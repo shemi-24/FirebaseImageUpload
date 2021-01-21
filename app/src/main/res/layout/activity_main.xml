@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="16dp"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="338dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/uploadtext1"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter the product name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camerabtn" />
+
+    <EditText
+        android:id="@+id/uploadtext3"
+        android:layout_width="338dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Content Description"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadtext2" />
+
+    <ProgressBar
+        android:id="@+id/pgsbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="395dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="1dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpgrs" />
+
+    <Button
+        android:id="@+id/uploadbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/rectangle"
+        android:text="Upload"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadtext3" />
+
+    <TextView
+        android:id="@+id/showtview"
+        android:layout_width="190dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:gravity="center"
+        android:text="Show Uploads"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/uploadbtn"
+        app:layout_constraintTop_toBottomOf="@+id/uploadtext3" />
+
+    <EditText
+        android:id="@+id/uploadtext2"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Brand"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadtext1" />
+
+    <TextView
+        android:id="@+id/textpgrs"
+        android:layout_width="67dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:gravity="bottom|center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgview" />
+
+    <ImageButton
+        android:id="@+id/closebutton"
+        android:layout_width="41dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rectangle"
+        android:foreground="@drawable/ic_baseline_close_24"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ImageView
+        android:id="@+id/camerabtn"
+        android:layout_width="69dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pgsbar"
+        app:srcCompat="@drawable/cameraicon" />
+
+    <ImageView
+        android:id="@+id/gallarybtn"
+        android:layout_width="104dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginRight="158dp"
+        app:layout_constraintEnd_toStartOf="@+id/camerabtn"
+        app:layout_constraintTop_toBottomOf="@+id/pgsbar"
+        app:srcCompat="@drawable/gallaryicon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

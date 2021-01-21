@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileimg"
+        android:layout_width="191dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/profile"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileimg" />
+
+    <TextView
+        android:id="@+id/profilecompany"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:text="Company"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileimg" />
+
+    <TextView
+        android:id="@+id/profileemail"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="152dp"
+        android:gravity="center"
+        android:text="Email"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileimg" />
+
+    <TextView
+        android:id="@+id/profilepassword"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="212dp"
+        android:gravity="center"
+        android:text="Password"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileimg" />
+
+    <TextView
+        android:id="@+id/profilephone"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="272dp"
+        android:gravity="center"
+        android:text="Phone"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileimg" />
+
+    <ImageView
+        android:id="@+id/profileback"
+        android:layout_width="45dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        app:layout_constraintEnd_toStartOf="@+id/profileimg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
